@@ -1,0 +1,288 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #090d29;
+  background-attachment: fixed;
+}
+
+.contatos {
+  position: relative;
+  top: 237px;
+  margin-left: 22px;
+  margin-bottom: 20px;
+  width: 30px;
+  height: 100px;
+}
+
+#link{
+width: 60px;
+height: 60px;
+}
+
+
+.circle {
+  padding: 23px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid #1c0936;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  display: flex; /* Adiciona display flex para centralizar a imagem */
+  align-items: center; /* Alinha verticalmente */
+  justify-content: center; /* Alinha horizontalmente */
+}
+
+.perfil {
+  width: 300px; /* Reduza o tamanho da imagem para se ajustar ao círculo */
+  height: 300px; /* Reduza o tamanho da imagem para se ajustar ao círculo */
+  border-radius: 50%; /* Certifique-se de que a imagem também seja circular */
+}
+
+.cursos {
+  color: #faf9f9;
+}
+
+/* TEXTO MOSTRADO E DIGITADO ABAIXO DO MENU */
+.textoprincipal {
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  text-shadow: rgba(21, 1, 41, 0.877) 10px 6px 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.animated1 {
+  color: #0e5472;
+}
+
+.perfis {
+  margin-left: 30px;
+  margin-bottom: 70px;
+}
+
+
+
+
+/* ABA DOS PROJETOS */
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  height: 460px;
+  margin: auto;
+  background-color: #0b1f4079;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(36, 2, 59, 0.7);
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+.card-header {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-img {
+  min-width: 100%;
+  width: auto;
+  height: 100%;
+}
+
+.card-body {
+  height: 170px;
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.card-local {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.card-titulo {
+  font-size: 32px;
+  margin: 15px 0;
+}
+
+.card-texto {
+  font-size: 12px;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.card-footer {
+  margin-top: 10px;
+  text-align: center;
+  background-color: #000;
+}
+
+.card-footer a {
+  color: #fff;
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.card-1 .card-footer {
+  background-color: #1c0936;
+  width: 200px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.card-1 .card-local {
+  color: #f7f7f8;
+}
+
+.card-2 .card-footer {
+  background-color: #1c0936;
+  width: 200px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.card-2 .card-local {
+  color: #fdfbfc;
+}
+
+.card-3 .card-footer {
+  background-color: #1c0936;
+  width: 200px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.card-3 .card-local {
+  color: #fafcfa;
+}
+
+.card:hover {
+  transform: scale3d(1.1, 1.1, 1);
+}
+
+/* CURSOS */
+.divcursos {
+  background-color: #0b1f4079;
+  margin-top: 50px;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+hr {
+  height: 0.5px;
+  border-color: #130b40;
+  width: 800px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+    align-items: center; /* Alterado de stretch para center */
+  }
+
+  /* Adicionando a parte modificada para dispositivos móveis */
+.card {
+  width: calc(70% - 50px);
+   
+    margin-bottom: 30px; /* Adicionado um espaçamento inferior para separar os cartões */
+  }
+
+  
+
+}
+
+.linguagens{
+text-align: center;
+margin: 30px;
+padding: 10px; 
+width: 95%;
+
+}
+
+.iconetec{
+margin: 30px;
+width: 150px;
+height: 150px;
+
+}
+
+
+/* CSS de contato */
+.formulario {
+  background-color: #0b1f4079;
+  text-align: center;
+  width: 70%;
+  height: 500px;
+  margin: auto;
+  padding: 5px;
+  margin-bottom: 100px;
+  border-radius: 6px;
+  margin-top: 80px;
+  font-size: 20px;
+}
+button{
+width: 150px;
+height: 50px; 
+margin-bottom: 30px;
+}
+.animated-button {
+  background-color: #1c0936; /* cor de fundo do botão */
+  border: none;
+  color: white;
+  padding: 15px ; /* tamanho do botão */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition-duration: 0.4s; /* duração da transição */
+}
+
+.animated-button:hover {
+  background-color: #381c88; /* cor de fundo do botão ao passar o mouse */
+}
+
+.animated-button:active {
+  transform: translateY(10px); /* movimento de pulo ao clicar */
+}
+
+
+
+.tituloformulario {
+  color: #fcfcfc;
+}
+
+footer {
+  height: 50px;
+  padding: 4px 0;
+  color: rgb(252, 250, 250);
+  font-size: 20px;
+}

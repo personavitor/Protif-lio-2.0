@@ -1,0 +1,53 @@
+div{text-align: center;
+
+font-size: 30px;
+}
+                p{font-size: 20px;}
+
+        nav{text-align: center;
+        
+        }
+
+             video{
+margin: 30px;
+padding:30px;
+
+border-radius: 50px;
+             }
+
+             .beneficios{
+                color: black;
+                text-align: center;
+                margin-bottom: 40px;
+                background-color: rgba(54, 54, 204, 0.705);
+            }
+
+
+                 #botaodecompra {
+                    
+                    text-align: center;
+                    font-size: 30px;
+                    margin: auto;
+                    padding: auto;
+                    display: block;
+                    background-color: green; 
+                    color: white; 
+height: 50px;
+width: 350px;
+border-radius: 60px;
+                 }
+                    footer{
+background-color: rgba(0, 0, 0, 0.877);
+text-align: center;
+                        height: 50px; 
+                       
+
+                    }
+
+                    @media (max-width: 999px)
+
+                  {
+
+
+                  
+                  }

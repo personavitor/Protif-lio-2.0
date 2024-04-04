@@ -1,0 +1,414 @@
+*{
+    padding: 0;
+    margin: 0;
+      text-decoration: none;
+      list-style: none;
+      box-sizing: border-box;
+     
+    }
+    
+    body{
+      font-family: montserrat;
+    }
+    .menu1{
+      
+      height: 70px;
+      width: 100%;
+      margin-top: 10px;
+    
+      padding-right: 10px;
+      padding-left: 10px;
+  background-color: rgb(0, 0, 0);
+    }
+  
+    /**/
+    label.logo{
+      color: #47012ad0;
+      font-size: 35px;
+      line-height: 80px;
+      padding:0 100px;
+      font-weight: bold;
+      
+    }
+@media(max-width: 360px){
+
+.logo{
+display: none;
+
+}
+
+
+
+}
+
+.imglogo{
+width: 100px;
+height: 60px;
+
+
+}
+
+    .menu1 ul{
+      float: right;
+      margin-right: 20px;
+    }
+    .menu1 ul li{
+      display: inline-block;
+      line-height: 80px;
+      margin: 0 5px;
+    }
+    .menu1 ul li a{
+      color: rgb(252, 248, 248);
+      font-size: 17px;
+      padding: 7px 13px;
+      border-radius: 3px;
+      text-transform: uppercase;
+    }
+  /*atencão */
+  
+  .lista.a.active,a:hover {
+    background: #470149b4;
+    transition: 0.6s;
+    color: #f7f7f8;
+  }
+  
+  /*atencão */
+  
+    .checkbtn{
+      font-size: 40px;
+      color: rgb(44, 1, 19);
+      float:right;
+      line-height: 80px;
+      margin-right: 40px;
+      cursor: pointer;
+      display: none;
+     
+    }
+    #check{
+      display: none;
+    }
+    @media (max-width: 999px)
+    {
+      label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+      }
+      .menu1 ul li a{
+        font-size: 16px;
+      }
+  
+  
+    }
+    @media (max-width:999px){
+      .checkbtn{
+        display: block;
+      }
+      .menu1 ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #032457c2;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+      }
+      .menu1 ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+      }
+      .menu1 ul li a{
+        font-size: 20px;
+      }
+      a:hover, a.active{
+        background: none;
+        color:#470149b4;
+      }
+      #check:checked ~ ul{
+        left: 0;
+      }
+    }
+
+    button a{
+        text-decoration: none;
+        list-style: none;
+        
+          }
+        
+        
+        
+        
+        
+        
+          /* Estilos para a seção de banner */
+          .banner {
+            background-image:url() ;
+            background-size:100%;
+            background-repeat:no-repeat;
+            height: 600px;
+            background-color:#47012a ;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fdfcfc;
+            padding: 20px;
+        
+        margin: auto;
+          }
+        
+        
+          .banner h1 {
+            margin-top: 50px;
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+          }
+          
+          .banner p {
+            margin-top: 20px;
+            font-size: 20px;
+            margin-bottom: 30px;
+          }
+          
+          .banner button {
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            background-color: #f7f3f3;
+            color: #070707;
+            border: 2px solid #ffffff00;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+            
+          }
+          
+
+
+          .banner button:hover {
+            background-color: #470149;
+            color: #f8f5f5;
+          }
+          
+          /* Estilos para a seção Sobre Nós */
+          .about {
+            background-color: #7003614b;
+            padding: 50px;
+            text-align: center;
+          }
+          
+          .about h2 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 30px;
+          }
+          
+          .about p {
+            font-size: 18px;
+            line-height: 1.5;
+          }
+          
+          /* Estilos para a seção Nossos Serviços */
+          .services {
+            background-color: #7003614b;
+            padding: 50px;
+            text-align: center;
+          }
+          
+          .services h2 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 30px;
+          }
+          
+
+
+          .carousel-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            margin: auto;
+            padding:40px ;
+          }
+        
+          @media only screen and (Max-width: 450px) {
+            .carousel-container {
+              
+              width: 100%;
+            }
+        
+          }
+        
+        
+          .carousel {
+            display: flex;
+            width: fit-content;
+            transition: transform 0.3s ease-in-out;
+          }
+          .carousel-item {
+            flex-shrink: 0;
+          width: 60px;
+          height: 60px;
+          padding: 20px;
+          text-align: center;
+          background-color: #70036110;
+          border: 1px solid black;
+          
+          margin-right: 10px;
+          border-radius: 50%; 
+          box-shadow: 0 6px 6px rgba(0, 0, 0, 0.623); /* adicionando a sombra */
+          }
+          .carousel-prev,
+          .carousel-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 25px;
+            color: #440123;
+            cursor: pointer;
+          }
+          .carousel-prev {
+            
+            left: 0;
+          }
+          .carousel-next {
+            right: 0;
+            
+          }
+        
+          
+          .services a:hover {
+            background-color: #f8eff8;
+            color: #fff;
+          }
+          
+         .terms li {
+          text-decoration: none;
+          list-style: none;
+          display: inline;
+          margin: 10px;
+         }
+         footer a{
+        text-decoration: none;
+        color: #46073d;
+        display: inline;
+         }
+         .social >img {
+            display:inline-flex;
+            margin: 10px;
+         }
+        /*estilo para o portifólio e carrossel*/
+.portifolio{
+background-color: #2b045e;
+
+
+
+}
+
+
+        #portf{
+
+          text-align: center;
+        }
+
+        .slider {
+          width: 50%;
+          margin: 0 auto;
+          position: relative;
+          background-color: #fefcff;
+        }
+        
+        .slider img {
+          width: 100%;
+        }
+        
+        .slick-prev,
+        .slick-next {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          z-index: 1;
+          display: block;
+          width: 30px;
+          height: 30px;
+          padding: 0;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          background: transparent;
+          font-size: 0;
+          opacity: 0.5;
+          transition: opacity 0.3s ease-in-out;
+        }
+        
+        .slick-prev:hover,
+        .slick-next:hover {
+          opacity: 1;
+        }
+        
+        .slick-prev:before,
+        .slick-next:before {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-image: url("https://cdn.jsdelivr.net/npm/slick-carousel@1.9.0/slick/fonts/slick.ttf");
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+        
+        .slick-prev:before {
+          background-position: -50px 0;
+        }
+        
+        .slick-next:before {
+          background-position: 0 0;
+        }
+        
+        .slick-dots {
+          position: absolute;
+          bottom: 5px;
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          text-align: center;
+          list-style: none;
+        }
+        
+        .slick-dots li {
+          display: inline-block;
+          margin: 0 5px;
+        }
+        
+        .slick-dots li button {
+          font-size: 0;
+          line-height: 0;
+          display: block;
+          width: 5px;
+          height: 5px;
+          padding: 5px;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          border-radius: 50%;
+          background-color: #11010c;
+          transition: background-color 0.3s ease-in-out;
+        }
+        
+        .slick-dots li button:hover,
+        .slick-dots li.slick-active button {
+          background-color: #490434;
+        }
+
+
+
+          .testimonials{
+
+margin-top: 200px;
+
+
+          }
